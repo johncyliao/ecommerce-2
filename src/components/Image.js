@@ -1,10 +1,12 @@
 import React, {useState ,useContext} from "react"
 import PropTypes from 'prop-types';
 import { Context } from "../Context";
-import { AiOutlineHeart } from 'react-icons/ai';
-import { BsCartPlus } from 'react-icons/bs';
-import { AiFillHeart } from 'react-icons/ai';
-import { BsFillCartCheckFill } from 'react-icons/bs';
+import { BiCommentDetail } from 'react-icons/bi'
+import {Link} from 'react-router-dom'
+import { AiOutlineHeart } from 'react-icons/ai'; //emty heart
+import { AiFillHeart } from 'react-icons/ai'; //filled heart
+import { BsCartPlus } from 'react-icons/bs'; //empty cart
+import { BsFillCartCheckFill } from 'react-icons/bs'; //filled cart
 // import useHover from "../hooks/useHover"
 
 
@@ -12,6 +14,9 @@ function Image({className, photo}) {
     const [hovered, setHovered] = useState(false)
     // const [hovered, ref] = useHover()
     const {toggleFavorite, addToCart, removeFromCart, cartItems} = useContext(Context)
+
+
+    const linkToProduct = photo.name.replace(/\s/,'-');
 
     //conditionally showing the heart icon
     function heartIcon() {
@@ -51,6 +56,10 @@ function Image({className, photo}) {
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
             >
+                <Link to={`/store/${linkToProduct}`}>
+                    <BiCommentDetail className="detial-icon"/>
+                </Link>
+                
                 <img
                     src={photo.address} 
                     // className="image-grid"
@@ -59,6 +68,7 @@ function Image({className, photo}) {
                 />
                 {heartIcon()}
                 {cartIcon()}
+                
                 <div className="product-textbox">
                     <h2>{photo.description} </h2>
                 </div>

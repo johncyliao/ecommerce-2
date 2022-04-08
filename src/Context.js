@@ -1,5 +1,6 @@
 import React, {createContext, useState, useEffect} from 'react'
 import { photosData } from './photosData'
+
 const Context = createContext()
 
 const ContextProvider = ({children}) => {
@@ -38,7 +39,7 @@ const ContextProvider = ({children}) => {
         setCartItems([])
     }
     
-    console.log(allPhotos)
+    // console.log(allPhotos)
 
     return (
         <Context.Provider value={{

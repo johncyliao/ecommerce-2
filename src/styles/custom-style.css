@@ -43,15 +43,15 @@ section {
 }
 
 .section-1 {
-    background-image: url(./images/tunnel-night.jpg);
+    background-image: url(../images/tunnel-night.jpg);
 }
 
 .section-2 {
-    background-image: url(./images/axceed.jpg);
+    background-image: url(../images/axceed.jpg);
 }
 
 .section-3 {
-    background-image: url(./images/bus-jumbo-1.jpg);
+    background-image: url(../images/bus-jumbo-1.jpg);
 }
 
 .hero-text-box {
@@ -156,6 +156,15 @@ a:active { color: var(--light-blue); }
     color: var(--red);
     font-size: 2.6rem;
     position: absolute;
+    top: 60px;
+    left: 6vw;
+    cursor: pointer;
+}
+
+.detial-icon {
+    color: var(--red) !important;
+    font-size: 2.6rem;
+    position: absolute;
     top: 15px;
     right: 6vw;
     cursor: pointer;
@@ -202,6 +211,8 @@ div.order-button > button:disabled {
     display: flex;
     align-items: center;
     margin: 20px 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #DDDDDD;
 }
 
 .cart-item img {
