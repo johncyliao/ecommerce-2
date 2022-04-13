@@ -1,8 +1,8 @@
 import image1 from './images/tunnel-night.jpg';
-import image2 from './images/acury.jpg';
+import image2 from './images/A59A3168.jpg';
 import image3 from './images/axceed.jpg';
 import image4 from './images/bus-jumbo-1.jpg';
-import image5 from './images/Synergy.jpg';
+import image5 from './images/TS3342-1.jpg';
 import image6 from './images/tunnel-wiper.jpg';
 
 

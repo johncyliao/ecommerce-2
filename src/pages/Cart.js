@@ -1,6 +1,8 @@
 import React, {useState, useContext} from "react"
 import {Context} from "../Context"
 import CartItem from "../components/CartItem"
+import "../styles/cart.css"
+import ToTopBtn from '../components/ToTopBtn'
 
 function Cart() {
     const [buttonText, setButtonText] = useState("Place Order")
@@ -35,9 +37,10 @@ function Cart() {
                 {
                 cartItems.length > 0 ? 
                     <button onClick={placeOrder}>{buttonText}</button> :
-                    <h2>Cart is empty</h2>
+                    <h2 className="empty">Cart is empty</h2>
                 }
             </div>
+            <ToTopBtn />
         </main>
     )
 }

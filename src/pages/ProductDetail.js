@@ -2,6 +2,8 @@ import React, {useContext} from 'react'
 import { useParams } from 'react-router-dom'
 import { Context } from "../Context";
 import { Carousel } from 'react-bootstrap';
+import ToTopBtn from '../components/ToTopBtn'
+
 
 const ProductDetail = () => {
     const {allPhotos, heartIcon, cartIcon} = useContext(Context)
@@ -10,6 +12,7 @@ const ProductDetail = () => {
 
     return (
         <div>
+            <ToTopBtn />
             <Carousel>
                 <Carousel.Item>
                     <img

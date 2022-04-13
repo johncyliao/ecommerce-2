@@ -51,12 +51,13 @@ function Image({className, photo}) {
 
     return (
         <div className="product-container">
+            <h1>{photo.name}</h1>
             <div 
                 className={`${className} image-container`}
                 onMouseEnter={() => setHovered(true)}
                 onMouseLeave={() => setHovered(false)}
             >
-                <Link to={`/store/${linkToProduct}`}>
+                <Link to={`/product/${linkToProduct}`}>
                     <BiCommentDetail className="detial-icon"/>
                 </Link>
                 

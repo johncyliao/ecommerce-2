@@ -1,0 +1,128 @@
+:root {
+    --black: #150605;
+    --red: #EA453C;
+    --pink: #F47B6E;
+    --light-blue: #EFFBFE;
+    --blue: #2D31FA;
+    --textbox: rgba(207, 109, 28, 0.8);
+    --home-background1: rgba(0,0,0,0.1);
+}
+
+.home-page {
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    /* scroll-snap-points-y: repeat(300px); */
+    /* overflow-y: scroll; */
+    height: auto;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #EFFBFE;
+    border-bottom: solid;
+    color: var(--light-blue);
+    scroll-snap-align: start;
+    /* filter: blur(2px);
+    -webkit-filter: blur(3px); */
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.section-1 {
+    background-image: url(../images/tunnel-night.jpg);
+}
+
+.section-2 {
+    background-image: url(../images/axceed.jpg);
+}
+
+.section-3 {
+    background-image: url(../images/bus-jumbo-1.jpg);
+}
+
+.hero-text-box {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.75); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 50vw;
+    min-height: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.hero-text-box > p {
+    font-weight: 200;
+}
+
+.home-page-btn {
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+}
+
+.home-page-btn:hover {
+    border: 3px solid white;
+    background-color: rgba(0,0,0,0.3);
+    font-weight: 800;
+}
+
+.carousel-image {
+    object-fit: cover;
+    height: 70vh;
+}
+
+.carousel-caption {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.75); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    
+}
+
+.home-intro-container {
+    height: 60vh;
+    
+}
+
+.home-intro {
+    margin: 0 6em;
+    padding: 4em;
+    border-bottom: 3px solid var(--black);
+}
+
+.home-intro > h3 {
+    margin-bottom: 1.0em;
+}
+
+.home-intro > h4 {
+    margin-bottom: 0.6em;
+}
+
+.home-intro > button {
+    margin-top: .8em;
+    border-radius: 8px;
+    background-color: white;
+    height: 50px;
+    width: 160px;
+}
+
+.home-intro > button:hover {
+    background-color: orangered;
+    color: white;
+}

@@ -1,0 +1,40 @@
+footer {
+    margin: 0;
+    margin-top: 50px;
+    padding: 10em 16em;
+    background-color: antiquewhite;
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.upper-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-area {
+    border-top: 1px solid orange;
+}
+
+.social-icon {
+    color: black;
+    font-size: 1.6em;
+}
+
+#github:hover {
+    color: orangered;
+}
+
+#linkedin:hover {
+    color: #0a66c2;
+}
+
+#twitter:hover {
+    color: #1da1f2;
+}
+
+#email-input:focus, .btn-subscribe:focus {
+    border-color: orange;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 72, 0, 0.5);
+}
